@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333642;
+    color: #35b996;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 3em;
+}
+
+.calc-wrapper {
+    max-width: 500px;
+    min-height: calc(100vh - 6em);
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+label {
+    display: block;
+    font-size: 2.5em;
+    font-weight: 300;
+    text-align: center;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin-top: 0.25em;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.input-text {
+    padding: 2em;
+}
+.input-text .rupee-sign-wrapper {
+    position: relative;
+}
+.input-text .rupee-sign-wrapper::before {
+    content: "₹";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0.25em;
+    font-size: 1.75em;
+    z-index: 1;
+}
+.input-text input {
+    position: relative;
+    margin-bottom: 0.5em;
+    border: 2px solid #35b996;
+    padding: 0.1em 0.1em 0.1em 1em;
+    color: #35b996;
+    text-align: right;
+}
+.input-text input::before {
+    content: "₹";
+}
+.input-text input:focus {
+    outline: none;
+    border-color: #f0cdf4;
+}
+.input-text input::placeholder {
+    color: #35b996;
+}
+.input-text input:-ms-input-placeholder {
+    color: #35b996;
+}
+.input-text input::-ms-input-placeholder {
+    color: #35b996;
+}
+
+.range-wrap {
+    position: relative;
+    margin-bottom: 2em;
+    padding: 2em 1em 3em 1em;
+    background-color: #35b996;
+}
+.range-wrap label {
+    margin-bottom: 0.25em;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    background: transparent;
+}
+input[type="range"]:focus {
+    outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+input[type="range"]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 1.5em;
+    width: 1.5em;
+    margin-top: -0.65em;
+    border: 5px solid #f0cdf4;
+    border-radius: 100%;
+    background: #fff;
+    cursor: pointer;
+}
+input[type="range"]::-moz-range-thumb {
+    height: 1em;
+    width: 1em;
+    border-radius: 100%;
+    background: #fff;
+    cursor: pointer;
+    margin-top: 0;
+}
+input[type="range"] ::-ms-thumb {
+    height: 1em;
+    width: 1em;
+    border-radius: 100%;
+    background: #fff;
+    cursor: pointer;
+    margin-top: 0;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 0.25em;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 1em;
+}
+input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 0.25em;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 1em;
+}
+input[type="range"]::-ms-track {
+    width: 100%;
+    height: 0.25em;
+    cursor: pointer;
+    background: #fff;
+    color: transparent;
+    border-radius: 1em;
+}
+
+.bubble {
+    position: absolute;
+    bottom: -2.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1em;
+    color: #35b996;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+.bubble::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 25px;
+    background: #f0cdf4;
+    top: -1px;
+    left: 50%;
+}
+
+.output-wrapper {
+    padding: 0.5em;
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 300;
+    text-align: right;
+}
+.output-wrapper .rupee-sign {
+    font-size: 0.75em;
+    vertical-align: top;
+}
+.output-wrapper .amount {
+    font-weight: 400;
+}
