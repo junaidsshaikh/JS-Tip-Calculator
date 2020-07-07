@@ -64,7 +64,7 @@ input {
 }
 .input-text input:focus {
     outline: none;
-    border-color: #f0cdf4;
+    border-color: #35B996;
 }
 .input-text input::placeholder {
     color: #35b996;
@@ -109,7 +109,7 @@ input[type="range"]::-webkit-slider-thumb {
     height: 1.5em;
     width: 1.5em;
     margin-top: -0.65em;
-    border: 5px solid #f0cdf4;
+    border: 5px solid #35B996;
     border-radius: 100%;
     background: #fff;
     cursor: pointer;
@@ -168,7 +168,7 @@ input[type="range"]::-ms-track {
     position: absolute;
     width: 5px;
     height: 25px;
-    background: #f0cdf4;
+    background: #35B996;
     top: -1px;
     left: 50%;
 }

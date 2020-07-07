@@ -2,10 +2,10 @@
 
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html;" />
-        <meta charset="utf-8" />
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet" />
+        <meta charset="utf-8">
         <title>JS Tip Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet" />
 
         <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
